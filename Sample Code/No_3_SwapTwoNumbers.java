@@ -72,6 +72,9 @@ public class No_3_SwapTwoNumbers {
 
         System.out.println("Using XOR Operator (^)");
 
+        //a^a = 0
+        //a^0 = a
+
         System.out.println("Before Swapping Numbers are: \n" +
                 "First Number = " + firstNum + '\n' +
                 "Second Number = " + secondNum);
