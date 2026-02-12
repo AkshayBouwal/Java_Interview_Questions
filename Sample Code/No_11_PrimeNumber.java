@@ -30,9 +30,22 @@ public class No_11_PrimeNumber {
         }
     }
 
-        public static boolean primeChecker(int target) {
+    public static boolean primeChecker(int target) {
 
-        for (int i = 2; i < target / 2; i++) {
+        for (int i = 2; i < target; i++) {
+
+            if (target % i == 0) {
+                return false;
+            }
+
+        }
+
+        return true;
+    }
+
+    public static boolean primeChecker2(int target) {
+
+        for (int i = 2; i <= target / 2; i++) {
 
             if (target % i == 0) {
                 return false;
